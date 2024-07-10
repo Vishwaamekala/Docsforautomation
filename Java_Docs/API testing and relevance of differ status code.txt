@@ -1,0 +1,60 @@
+API testing and relevance of different status code is really important.
+
+People often test API's but they don't understand the exact meaning of what each status code signify?
+
+Let's Discuss today important status code that every Tester should understand!
+.
+.
+
+<> 100 series status codes - Informational codes used in Transport layer
+1) 101 - hashtag
+#Switching protocol
+Example - From HTTP to WebSocket
+2) 103 - hashtag
+#Early Hints
+Indicates Server is still preparing a response for client
+
+<> 200 series status codes - Success Codes, Indicates hashtag
+#client request completed successfully
+1) 200 - hashtag
+#OK = Request is completed successfully, for
+Example - GET rqst - Resources fetched & transmitted to client
+2) 201 - hashtag
+#Created = Request is success & resource is created
+Example - POST rqst - Resource created before sending response back to client
+3) 202 - hashtag
+#Accepted = Means request is accepted for processing. Mostly used for batch processing
+4) 204 - hashtag
+#No_Content = When details are saved but the current page on which user is present is not required to be updated.
+
+<> 300 Series Status Code - Redirection Codes
+1) 301 - Requested resource is moved permanently to different location, that location can be found through headers. Mostly used with hashtag
+#Get or hashtag
+#Head.
+
+<> 400 Series Status Code - Client Error Codes
+1) 400 - hashtag
+#Bad_Request - Request cannot be processed due to some issues in request received.
+Example - Incorrect Request Body
+2) 401 - hashtag
+#Unauthorized - Request cannot be processed because to access the resources it requires auth credentials.
+3) 403 - hashtag
+#Forbidden - Auth credentials provided with request do not have valid authorization to access the resources.
+4) 404 - hashtag
+#Not_Found - Broken links, requested resources does not exist.
+
+<> 500 Series Status Code - Server Side Issues
+1) 500 - hashtag
+#Internal_Server_Error - Generic error code, Server is not able to process the request
+2) 502 - hashtag
+#Bad_Gateway - Server received a invalid response from Upstream server.
+3) 503 - hashtag
+#Service_Unavailable - Due to server maintenance or downtime
+4) 504 - hashtag
+#Gateway_Timeout - Server did not receive response back from upstream server in time due to which it was not able to complete the client request.
+
+Do follow for more - Japneet Sachdeva
+
+-x-x-
+
+Prepare for SDET interviews with most asked interview questions & answers in 2024 (paid): https://lnkd.in/gSU-m2F7
